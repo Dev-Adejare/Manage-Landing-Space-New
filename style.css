@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #faf7f7;
+}
+
+  
+.heroSection {
+    background: #eaadad;
+    /* height: 70vh; */
+    
+    
+}
+
+.heroTextBox {
+    width: 40%;
+}
+
+.heroCon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+    padding: 5rem;
+   
+}
+
+.heroCon h1 {
+    font-size: 50px;
+    
+   
+}
+
+.heroCon p {
+   font-size: 18px;
+}
+
+.heroCardBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    width: 50%;
+}
+
+.card {
+    flex: 1 1  45%; /* Adjust size of cards */
+    margin: 10px; /* Adjust margin as needed */
+  }
+  
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  .card:nth-child(3) {
+    flex-basis: 80%; /* Make the third card take the full width */
+   
+  }
+
+.heroCardBox .card {
+    background-color: aliceblue;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
