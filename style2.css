@@ -42,7 +42,7 @@ body {
 .mainSectionBottom button,
 .containerLast button {
   padding: 0.8rem 2rem;
-  background-color: orangered;
+  background-color:hsl(12, 88%, 59%);
   border-radius: 50px;
   font-size: 20px;
   border: none;
@@ -63,7 +63,7 @@ body {
 .heroImg {
     background-image: url(/images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: calc();
+    /* background-position: calc(); */
     background-position: top right;
     background-size: contain;
 }
@@ -100,11 +100,11 @@ body {
 }
 
 .containerTwo {
-  display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: start;
   width: 100%;
-  gap: 7rem;
+  gap: 7rem; 
 }
 
 .dotParentContainer {
@@ -134,7 +134,7 @@ body {
 
 .dotContainer .dot span {
   padding: 0.6rem 1.5rem;
-  background-color: orangered;
+  background-color:hsl(12, 88%, 59%);
   color: white;
   border: none;
   border-radius: 50px;
@@ -191,7 +191,7 @@ body {
 
 .mainSectionLast {
   padding: 5rem;
-  background-color: orangered;
+  background-color:hsl(12, 88%, 59%);
   margin-top: 8rem;
 }
 
@@ -210,14 +210,14 @@ body {
 
 .containerLast .button {
   background-color: white;
-  color: orangered;
+  color:hsl(12, 88%, 59%);
 }
 
 footer {
   padding: 2rem 5rem;
   background-color: black;
 }
-
+/* 
 .footerWrapper {
   display: flex;
   align-items: start;
@@ -270,11 +270,11 @@ form input::placeholder {
 
 .formContainer p {
   color: rgb(166, 166, 166);
-}
+} */
 
 
 
-/* .footerWrapper {
+.footerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -307,7 +307,7 @@ form input {
 
 form button {
   padding: 0.6rem 1.5rem;
-  background-color: orangered;
+  background-color:hsl(12, 88%, 59%);
   color: white;
   border: none;
   border-radius: 50px;
@@ -323,4 +323,4 @@ form input::placeholder {
   text-align: center;
   margin-top: 3rem;
 }
- */
+
