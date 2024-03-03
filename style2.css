@@ -64,8 +64,16 @@ button:hover {
   background-color: #f58f75;
 }
 
+.navIcon ion-icon {
+  display: none;
+}
 .mainSectionTop {
   padding: 5rem;
+}
+
+.container div:nth-child(2) > button {
+  width: 280px;
+  padding: 1rem 1rem;
 }
 
 .heroImg {
@@ -79,15 +87,13 @@ button:hover {
 .container {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
-.container div:nth-child(1) {
+.container div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
   gap: 2rem;
-  width: 50%;
 }
 
 .container div h1 {
@@ -215,8 +221,6 @@ button:hover {
   color: #f25f3a;
   transition: all 0.9s;
   width: 20%;
-  /* width: 100%; */
-
 }
 
 .containerLast button:hover {
@@ -231,19 +235,26 @@ footer {
 .footerWrapper {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   margin: 0 auto;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .mana {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 1rem;
 }
 
-.fa-brands  {
-    font-size: 1.6rem;
-    color: white;
-    font-weight: 500;
+.fa-brands {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
 }
 
 .fa-brands:hover {
@@ -265,6 +276,12 @@ footer {
 
 .footerWrapper div ul li a:hover {
   color: #f25f3a;
+}
+
+.footerWrapper > .formContainer p {
+  display: inline-block;
+  color: rgb(166, 166, 166);
+  margin-top: 3rem;
 }
 
 form input {
@@ -291,8 +308,8 @@ form input::placeholder {
   width: 100%;
 }
 
-.formContainer p {
+.footerWrapper p {
+  display: none;
   color: rgb(166, 166, 166);
-  text-align: center;
   margin-top: 3rem;
 }

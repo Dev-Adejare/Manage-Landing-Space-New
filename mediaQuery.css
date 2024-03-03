@@ -26,6 +26,9 @@
   .container .heroImg img {
     width: 480px;
   }
+  .container div:nth-child(2) > button {
+    width: 50%;
+  }
   .mainSectionTop {
     padding: 3.4rem;
   }
@@ -36,9 +39,9 @@
     font-size: 1.7rem;
   }
 
-  .container div:nth-child(1) {
+  /* .container div:nth-child(1) {
     gap: 1rem;
-  }
+  } */
 
   /*Body sections*/
   .containerTwo div h2 {
@@ -71,7 +74,7 @@
   .fa-brands {
     font-size: 1.8rem;
   }
-  .footerWrapper div ul li a {
+  .footer-list div ul li a {
     font-size: 1.5rem;
   }
   form input {
@@ -147,10 +150,10 @@
   .imageContainer p {
     font-size: 1rem;
   }
-
+  /* 
   .container div:nth-child(1) {
     gap: 1rem;
-  }
+  } */
 
   /*Body sections*/
   .containerTwo div h2 {
@@ -222,9 +225,9 @@
     font-size: 1rem;
   }
 
-  .container div:nth-child(1) {
+  /* .container div:nth-child(1) {
     gap: 1rem;
-  }
+  } */
 
   /*Body sections*/
   .containerTwo div h2 {
@@ -322,7 +325,7 @@
     font-size: 0.8rem;
   }
 
-  .container div:nth-child(1) {
+  .container div:nth-child(2) {
     gap: 1rem;
   }
 
@@ -366,7 +369,7 @@
   .fa-brands {
     font-size: 1.2rem;
   }
-  .footerWrapper div ul li a {
+  .footer-list div ul li a {
     font-size: 0.7rem;
   }
   form input {
@@ -485,7 +488,7 @@
   .fa-brands {
     font-size: 1.2rem;
   }
-  .footerWrapper div ul li a {
+  .footer-list div ul li a {
     font-size: 0.7rem;
   }
   form input {
@@ -502,10 +505,9 @@
   }
 }
 
-
 @media screen and (max-width: 543px) {
-   /*Footer header */
-   .containerSimp p {
+  /*Footer header */
+  .containerSimp p {
     font-size: 1.4rem;
   }
 
@@ -513,10 +515,429 @@
     padding: 0.7rem 0.6rem;
     width: 28%;
   }
-  .footerWrapper div ul li a {
+  .footer-list div ul li a {
     font-size: 0.6rem;
   }
   form input {
     padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .primary-navigation,
+  .primary-header > button {
+    display: none;
+  }
+  .navIcon ion-icon {
+    display: inline-block;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+
+  .primary-header a img,
+  .mana a img {
+    width: 146px;
+  }
+
+  .container .heroImg img {
+    width: 100%;
+  }
+  .container div h1 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .primary-header .button,
+  .container div .button,
+  .mainSectionBottom button,
+  .containerLast button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 22px;
+  }
+
+  .container div:nth-child(2) > button {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .containerTwo {
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .containerTwo div h2,
+  .mainSectionBottom h2 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .containerTwo div p {
+    text-align: center;
+  }
+
+  .dotContainer .dot span {
+    padding: 0.6rem 1.2rem;
+  }
+  .paragraph-container h3 {
+    font-size: 1.2rem;
+    background-color: #f5af9e;
+  }
+  .containerTwo .paragraph-container div p {
+    text-align: start;
+  }
+
+  .imageHead {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .imageContainer {
+    padding: 0 0.8rem 0.8rem 0.8rem;
+    width: 80%;
+  }
+  .containerLast {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .containerLast .button {
+    padding: 0.7rem 0.6rem;
+    width: 40%;
+  }
+
+  .containerSimp p {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .footerWrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footerWrapper p {
+    display: inline-block;
+    color: rgb(166, 166, 166);
+    margin-top: 3rem;
+  }
+
+  .footerWrapper > .formContainer p {
+    display: none;
+    color: rgb(166, 166, 166);
+    margin-top: 3rem;
+  }
+  form input {
+    width: 70%;
+    padding: 1.2rem 3rem;
+  }
+  form input::placeholder {
+    font-size: 1.2rem;
+  }
+  form button {
+    padding: 0.8rem 2rem;
+  }
+  .footer-list {
+    flex-direction: row;
+    /* justify-content: flex-start; */
+  }
+  .footer-list div ul li a {
+    font-size: 1rem;
+  }
+
+  .footerWrapper div ul {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .mana {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  .mana .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .mana .social-media div img {
+    margin: 0 auto;
+  }
+  .fa-brands {
+    /* width: 100%; */
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .container div h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 18px;
+  }
+
+  .containerSimp p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container div h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 18px;
+  }
+
+  .containerSimp p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .container div h1 {
+    font-size: 1.7rem;
+  }
+
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 18px;
+  }
+
+  .paragraph-container h3 {
+    font-size: 1rem;
+  }
+
+  .container div:nth-child(2) > button {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .containerTwo div h2,
+  .mainSectionBottom h2 {
+    font-size: 1.8rem;
+  }
+
+  .containerTwo div p {
+    font-size: 12px;
+  }
+
+  .dotContainer .dot span {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .paragraph-container h3 {
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .containerSimp p {
+    font-size: 2rem;
+  }
+  .containerLast .button {
+    padding: 0.7rem 0.6rem;
+    width: 50%;
+  }
+  form input {
+    width: 60%;
+    padding: 0.8rem 2rem;
+  }
+  form input::placeholder {
+    font-size: 0.4rem;
+  }
+  form button {
+    padding: 0.7rem 1.8rem;
+  }
+
+  .footerWrapper p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .container div h1 {
+    font-size: 1.7rem;
+  }
+
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 18px;
+  }
+
+  .paragraph-container h3 {
+    font-size: 1rem;
+  }
+
+  .container div:nth-child(2) > button {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .containerTwo div h2,
+  .mainSectionBottom h2 {
+    font-size: 1.8rem;
+  }
+
+  .containerTwo div p {
+    font-size: 12px;
+  }
+
+  .dotContainer .dot span {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .paragraph-container h3 {
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .containerSimp p {
+    font-size: 2rem;
+  }
+  .containerLast .button {
+    padding: 0.7rem 0.6rem;
+    width: 50%;
+  }
+  form input {
+    width: 60%;
+    padding: 0.8rem 2rem;
+  }
+  form input::placeholder {
+    font-size: 0.4rem;
+  }
+  form button {
+    padding: 0.7rem 1.8rem;
+  }
+
+  .footerWrapper p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container div h1 {
+    font-size: 1.5rem;
+  }
+
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 14px;
+  }
+
+  .paragraph-container h3 {
+    font-size: 1rem;
+  }
+
+  .container div:nth-child(2) > button {
+    width: 50%;
+    font-size: 0.8rem;
+    margin: 0 auto;
+  }
+
+  .containerTwo div h2,
+  .mainSectionBottom h2 {
+    font-size: 1.8rem;
+  }
+
+  .containerTwo div p {
+    font-size: 12px;
+  }
+
+  .dotContainer .dot span {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .paragraph-container h3 {
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  .containerSimp p {
+    font-size: 2rem;
+  }
+  .containerLast .button {
+    padding: 0.7rem 0.6rem;
+    width: 50%;
+  }
+  form input {
+    width: 60%;
+    padding: 0.8rem 2rem;
+  }
+  form button {
+    padding: 0.7rem 1.8rem;
+  }
+
+  .footerWrapper p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container div h1 {
+    font-size: 1.2rem;
+  }
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 12px;
+  }
+  .container div:nth-child(2) > button {
+    width: 60%;
+    font-size: 0.7rem;
+  }
+
+  .containerTwo div h2,
+  .mainSectionBottom h2 {
+    font-size: 1.4rem;
+  }
+  .container div p,
+  .containerTwo div p,
+  .imageContainer p {
+    font-size: 10px;
+  }
+  .dotContainer .dot span {
+    /* padding: 0.4rem 0.8rem; */
+    font-size: 0.7rem;
+  }
+  .paragraph-container h3 {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .containerSimp p {
+    font-size: 1.8rem;
+  }
+  .containerLast .button {
+    padding: 0.7rem 0.6rem;
+    width: 60%;
+  }
+  .footer-list div ul li a {
+    font-size: 0.8rem;
+  }
+  .footerWrapper p {
+    font-size: 0.8rem;
   }
 }
